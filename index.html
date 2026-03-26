@@ -2,77 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahad Pasha | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahad Pasha | Portfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-        h1 {
-            font-size: 28px;
-        }
+h1 { font-size: 28px; }
 
-        .container {
-            max-width: 400px;
-            margin: auto;
-            margin-top: 30px;
-        }
+.container {
+    max-width: 600px;
+    margin: auto;
+}
 
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 8px;
-            border: none;
-        }
+.section {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
 
-        button {
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(45deg, #06b6d4, #9333ea);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+}
 
-        button:hover {
-            opacity: 0.9;
-        }
-    </style>
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #06b6d4, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+
 </head>
 
 <body>
 
-    <h1>Fahad Pasha</h1>
-    <p>Full Stack Developer</p>
+<h1>Fahad Pasha</h1>
+<p>Full Stack Developer</p>
 
-    <div class="container">
+<div class="container">
 
+    <!-- About Me -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am a passionate student learning full stack development. I enjoy building modern web applications and exploring new technologies.</p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
+        <p>Bachelor's Degree (Pursuing)</p>
+        <p>Kristu Jayanti College</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript</p>
+        <p>Node.js, Express</p>
+        <p>MongoDB</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
         <h2>Contact Me</h2>
 
         <form action="https://formspree.io/f/mqegzzpg" method="POST">
 
-            <input type="text" name="name" placeholder="Your Name" required>
-
-            <input type="email" name="email" placeholder="Email Address" required>
-
-            <input type="text" name="subject" placeholder="Subject">
-
-            <textarea name="message" placeholder="Your Message"></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-    </div>
-
-</body>
-</html>
+            <input type="text" name="name" placeholder="Your
