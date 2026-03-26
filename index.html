@@ -9,13 +9,16 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background: #0f172a;
+    background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-h1 { font-size: 28px; }
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
 
 .container {
     max-width: 600px;
@@ -24,15 +27,35 @@ h1 { font-size: 28px; }
 
 .section {
     background: rgba(255,255,255,0.05);
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
+/* 🔥 BUTTON STYLE */
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(45deg, #06b6d4, #9333ea);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* FORM */
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin: 8px 0;
+    margin: 10px 0;
     border-radius: 6px;
     border: none;
 }
@@ -40,14 +63,14 @@ input, textarea {
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(45deg, #06b6d4, #9333ea);
+    background: linear-gradient(45deg, #22c55e, #06b6d4);
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -57,10 +80,17 @@ button {
 
 <div class="container">
 
-    <!-- About Me -->
+    <!-- 🔥 BUTTON LINKS -->
+    <div class="section">
+        <h2>Links</h2>
+        <a href="https://github.com/fahadpasha-22" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/fahad" class="btn">LinkedIn</a>
+    </div>
+
+    <!-- About -->
     <div class="section">
         <h2>About Me</h2>
-        <p>I am a passionate student learning full stack development. I enjoy building modern web applications and exploring new technologies.</p>
+        <p>I am a passionate student learning full stack development. I enjoy building modern web applications.</p>
     </div>
 
     <!-- Education -->
@@ -84,4 +114,19 @@ button {
 
         <form action="https://formspree.io/f/mqegzzpg" method="POST">
 
-            <input type="text" name="name" placeholder="Your
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
